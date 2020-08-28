@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:focusableInTouchMode="true"
+        android:id="@+id/items"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/google_search"
+            android:layout_width="fill_parent"
+            android:layout_marginEnd="120dp"
+            android:layout_height="40dp"
+            android:queryHint="@string/search"
+            android:paddingStart="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:iconifiedByDefault="false"
+            app:searchIcon="@color/basicWhite"
+            app:defaultQueryHint="@string/search"
+            app:queryBackground="@drawable/shape_rounded"
+            android:searchIcon="@color/basicWhite"
+            android:background="@drawable/shape_rounded"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_search"
+            android:elevation="0dp"
+            android:layout_marginStart="13dp"
+            app:layout_constraintTop_toTopOf="@id/google_search"
+            app:layout_constraintBottom_toBottomOf="@id/google_search"
+            app:layout_constraintStart_toStartOf="@id/google_search"/>
+
+
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintEnd_toStartOf="@id/launches"
+            app:layout_constraintTop_toTopOf="@id/google_search"
+            app:srcCompat="@drawable/ic_facebook"
+            />
+
+        <ImageView
+            android:id="@+id/launches"
+            android:background="@drawable/round_orange"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintEnd_toStartOf="@id/share"
+            app:layout_constraintTop_toTopOf="@id/share"
+            android:layout_marginEnd="10dp"/>
+        <ImageView
+            android:id="@+id/share"
+            android:layout_marginTop="6dp"
+            android:layout_width="24dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/google_search"
+            android:background="@drawable/ic_share"
+            />
+        <TextView
+            android:id="@+id/text_for_launches"
+            android:text="11x"
+            android:paddingTop="4dp"
+            android:layout_marginStart="3dp"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintStart_toStartOf="@id/launches"
+            app:layout_constraintTop_toTopOf="@id/launches"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/items"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

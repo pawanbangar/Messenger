@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/chat_selector"
+        android:title="@string/chat"
+        />
+
+    <item
+        android:id="@+id/analytics"
+        android:icon="@drawable/analytics_selector"
+        android:title="@string/analytics"
+         />
+
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/feed_selector"
+        android:title="@string/feed"
+        />
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notification_selector"
+        android:title="@string/title_notifications"
+
+        />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/user_selector"
+        android:title="@string/acc"
+         />
+
+
+</menu>

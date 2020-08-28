@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.chatapp.messenger.Activity.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/whatsapp_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100dp"/>
+    <Button
+        android:id="@+id/sign_up_with_phone"
+        android:text="@string/get_started"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in_with"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_for_get_started"
+        />
+    <com.facebook.login.widget.LoginButton
+        app:layout_constraintTop_toBottomOf="@id/sign_up_with_phone"
+        app:layout_constraintStart_toStartOf="@id/sign_up_with_phone"
+        app:layout_constraintStart_toEndOf="@id/sign_up_with_phone"
+        android:textSize="22dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/login_button"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp" />
+    <TextView
+        android:id="@+id/sign_in_with"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_with"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

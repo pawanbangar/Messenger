@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/weekly"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/analysis_text"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/analysis" />
+
+            <TextView
+
+                android:id="@+id/analysis_launches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/launches"
+                android:textSize="12sp"
+                android:layout_below="@id/analysis_text"
+                android:layout_marginStart="12dp"/>
+            <TextView
+                android:id="@+id/times_total"
+                android:textSize="12sp"
+                android:layout_below="@id/analysis_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/analysis_launches"
+                />
+            <TextView
+                android:textSize="12sp"
+                android:text="@string/times"
+                android:layout_below="@id/analysis_text"
+                android:layout_toEndOf="@id/times_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/background_for_switch"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/calender"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/ic_calendar" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/view_container"
+            android:layout_weight="1"
+            android:background="@drawable/background_for_switch"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ToggleButton
+                android:id="@+id/view_changer"
+                android:background="@drawable/check"
+                android:focusable="false"
+                android:layout_marginStart="13dp"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginTop="7dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp">
+            </ToggleButton>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_recycler"
+        app:layout_constraintTop_toBottomOf="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

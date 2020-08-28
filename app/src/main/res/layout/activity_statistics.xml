@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.chatapp.messenger.Activity.StatisticsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_left_arrow"/>
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginStart="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/analysistext"
+            android:padding="5dp"/>
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/share"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_share" />
+        <ImageView
+            android:id="@+id/calender_analysis"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:layout_toStartOf="@id/share"
+            android:src="@drawable/ic_calendar"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@id/rel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/views_container"
+        android:layout_width="match_parent"
+        app:layout_constrainedHeight="true"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

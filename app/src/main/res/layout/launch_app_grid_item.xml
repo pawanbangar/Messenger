@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/round_corner_card_item"
+    app:cardElevation="2dp"
+    android:layout_marginTop="5dp">
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="30dp"
+            android:src="@drawable/youtube_logo" />
+        <TextView
+            android:textSize="14sp"
+            android:layout_marginStart="25dp"
+            android:text="Youtube"
+            android:layout_below="@id/logo"
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/launches"
+            android:layout_below="@id/appName"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:textSize="12dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/time_used"
+            android:layout_below="@id/launches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="10dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

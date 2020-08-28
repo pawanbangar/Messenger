@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    android:background="@drawable/round_corner_card_item"
+    android:layout_marginBottom="2dp"
+    android:elevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="20dp"
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/logo">
+
+            <TextView
+                android:id="@+id/appName"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/youtube"/>
+            <TextView
+                android:gravity="center_horizontal"
+                android:id="@+id/launches"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/time_used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:layout_width="40dp"
+            android:layout_marginEnd="15dp"
+            android:layout_height="40dp"
+            app:cpb_progress="50"
+            app:cpb_background_progressbar_color="#50f2b405"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progressbar_color="@color/colorPrimary"
+            app:cpb_progressbar_width="7dp"
+            app:cpb_indeterminate_mode="false"/>
+        <TextView
+            android:id="@+id/progress"
+            android:layout_marginEnd="27dp"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
