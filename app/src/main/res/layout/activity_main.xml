@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center"
     android:theme="@style/Apptheme"
-    tools:context="com.chatapp.messenger.Activity.MainActivity">
+    tools:context="com.mrserviceman.messenger.Activity.MainActivity">
 
     <RelativeLayout
         app:layout_constrainedHeight="true"
@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toTopOf="@id/adView"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_height="wrap_content">
-        <com.chatapp.messenger.ViewPagers.ViewPager
+        <com.mrserviceman.messenger.ViewPagers.ViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

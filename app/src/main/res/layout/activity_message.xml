@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_alignParentTop="true"
     android:layout_alignParentStart="true"
-    tools:context="com.chatapp.messenger.Activity.Message">
+    tools:context="com.mrserviceman.messenger.Activity.Message">
 
 <androidx.recyclerview.widget.RecyclerView
    android:layout_below="@id/toolbar"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.chatapp.messenger">
+    package="com.mrserviceman.messenger">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -24,9 +24,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="com.chatapp.messenger.Activity.SettingsActivity"></activity>
-        <activity android:name="com.chatapp.messenger.Activity.ProfieEditActivity" />
-        <activity android:name="com.chatapp.messenger.Activity.NewsFragmentActivity" />
+        <activity android:name="com.mrserviceman.messenger.Activity.SettingsActivity"></activity>
+        <activity android:name="com.mrserviceman.messenger.Activity.ProfieEditActivity" />
+        <activity android:name="com.mrserviceman.messenger.Activity.NewsFragmentActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -53,7 +53,7 @@
             android:value="false" />
 
         <service
-            android:name="com.chatapp.messenger.Notification.FirebaseMessaging"
+            android:name="com.mrserviceman.messenger.Notification.FirebaseMessaging"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -61,7 +61,7 @@
             </intent-filter>
         </service>
         <service
-            android:name="com.chatapp.messenger.Notification.FireBaseInstanceIdService"
+            android:name="com.mrserviceman.messenger.Notification.FireBaseInstanceIdService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -85,8 +85,8 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name="com.chatapp.messenger.Activity.AfterPhonelogin" />
-        <activity android:name="com.chatapp.messenger.Activity.StatisticsActivity" />
+        <activity android:name="com.mrserviceman.messenger.Activity.AfterPhonelogin" />
+        <activity android:name="com.mrserviceman.messenger.Activity.StatisticsActivity" />
 
         <meta-data
             android:name="com.inthecheesefactory.lab.glidepicasso.GlideConfiguration"
@@ -118,12 +118,12 @@
                 <data android:scheme="@string/ak_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name="com.chatapp.messenger.Activity.SearchActivity" />
-        <activity android:name="com.chatapp.messenger.Activity.WebActivity" />
-        <activity android:name="com.chatapp.messenger.Activity.Message" />
-        <activity android:name="com.chatapp.messenger.Activity.MainActivity" />
+        <activity android:name="com.mrserviceman.messenger.Activity.SearchActivity" />
+        <activity android:name="com.mrserviceman.messenger.Activity.WebActivity" />
+        <activity android:name="com.mrserviceman.messenger.Activity.Message" />
+        <activity android:name="com.mrserviceman.messenger.Activity.MainActivity" />
         <activity
-            android:name="com.chatapp.messenger.Activity.SignIn"
+            android:name="com.mrserviceman.messenger.Activity.SignIn"
             android:label="Messenger"
             android:theme="@style/NoActionBar">
             <intent-filter>
@@ -133,10 +133,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chatapp.messenger.Activity.ChatActivity"
+            android:name="com.mrserviceman.messenger.Activity.ChatActivity"
             android:label="@string/title_activity_chat"
             android:theme="@style/NoActionBar" />
-        <activity android:name="com.chatapp.messenger.Activity.SignUpActivity" />
+        <activity android:name="com.mrserviceman.messenger.Activity.SignUpActivity" />
     </application>
 
 </manifest>

@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center"
     android:background="#fff"
-    tools:context="com.chatapp.messenger.Activity.SignIn">
+    tools:context="com.mrserviceman.messenger.Activity.SignIn">
 
     <TextView
         android:elevation="30dp"

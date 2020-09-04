@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "262630367527",
-    "firebase_url": "https://messenger-8df12.firebaseio.com",
-    "project_id": "messenger-8df12",
-    "storage_bucket": "messenger-8df12.appspot.com"
+    "project_number": "969252587738",
+    "firebase_url": "https://messenger-52bb7.firebaseio.com",
+    "project_id": "messenger-52bb7",
+    "storage_bucket": "messenger-52bb7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:262630367527:android:e79da503c0972617",
+        "mobilesdk_app_id": "1:969252587738:android:03560418f13b018352bde3",
         "android_client_info": {
-          "package_name": "com.uptodown.Messenger"
+          "package_name": "com.mrserviceman.messenger"
         }
       },
       "oauth_client": [
         {
-          "client_id": "262630367527-gpf25ncgunij1lld64demlr669v03jc1.apps.googleusercontent.com",
+          "client_id": "969252587738-b4kg96vsqvb24phpomgr1k385nel7ccf.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.uptodown.Messenger",
-            "certificate_hash": "bbc05876ec1db64517129701b3957742ad0d8d22"
+            "package_name": "com.mrserviceman.messenger",
+            "certificate_hash": "775e23fca6b2c74bbf2ddebb0d459569a0bcc1d9"
           }
         },
         {
-          "client_id": "262630367527-u9hm9ue37k16gedhm0m93ffm4b9btvhs.apps.googleusercontent.com",
+          "client_id": "969252587738-iqg14k7sjhscg8gvs0ssd9ecakeph831.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCm3QfEk7YWJnwpH626NGtO7NPvAI6UN8M"
+          "current_key": "AIzaSyD9fI-00pSUNvFZecI64RTH4kwt7uDOk3Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "262630367527-u9hm9ue37k16gedhm0m93ffm4b9btvhs.apps.googleusercontent.com",
+              "client_id": "969252587738-iqg14k7sjhscg8gvs0ssd9ecakeph831.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

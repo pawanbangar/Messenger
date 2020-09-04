@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.chatapp.messenger.Activity.SignUpActivity">
+    tools:context="com.mrserviceman.messenger.Activity.SignUpActivity">
 
     <ImageView
         android:id="@+id/img_logo"

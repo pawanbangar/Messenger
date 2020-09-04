@@ -2,13 +2,21 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 29
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\pawanbangar\\Desktop\\private_key.pepk')
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+        }
+    }
+    compileSdkVersion 30
     buildToolsVersion "29.0.3"
     defaultConfig {
-        applicationId "com.mrserviceman.Messenger"
+        applicationId "com.mrserviceman.messenger"
         minSdkVersion 22
-        targetSdkVersion 29
-        versionCode 1
+        targetSdkVersion 30
+        versionCode 4
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }

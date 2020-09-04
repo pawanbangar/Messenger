@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="com.chatapp.messenger.Activity.StatisticsActivity">
+    tools:context="com.mrserviceman.messenger.Activity.StatisticsActivity">
 
     <RelativeLayout
         android:id="@+id/rel"
