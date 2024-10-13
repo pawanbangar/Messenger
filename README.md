@@ -1,5 +1,5 @@
 # Messenger
- All in One Messeging App where you can see trending news, app usage, Social Media, App Usage analysis
+ All in One Messeging App where you can see trending news, app usage, Social Media, App Usage analysis using Java
 
 ## 1. Messaging Screen
 ![alt text](screenshots/Screenshot_2019-09-02-18-23-09-139_com.uptodown.Messenger.png)
